@@ -23,7 +23,6 @@ bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
   }
   console.log(hash);
 
-  // Testa med fel lösenord
   bcrypt.compare(myPlaintextPassword, hash, (err, res) => {
     if (err) {
       console.error(err);
